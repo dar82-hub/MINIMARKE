@@ -31,7 +31,7 @@ public class VentanaResumenDia extends javax.swing.JFrame {
         tablaResumen = new javax.swing.JTable();
         lblTotalDia = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         lblResumen.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblResumen.setText("Resumen del día");

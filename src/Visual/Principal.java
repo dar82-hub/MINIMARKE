@@ -38,9 +38,19 @@ public class Principal extends javax.swing.JFrame {
 
         btnRegistroVentas.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnRegistroVentas.setText("Registro de Ventas");
+        btnRegistroVentas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegistroVentasActionPerformed(evt);
+            }
+        });
 
         btnCatalogo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnCatalogo.setText("Catálogo");
+        btnCatalogo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCatalogoActionPerformed(evt);
+            }
+        });
 
         btnCerrar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnCerrar.setText("Cerrar");
@@ -84,8 +94,16 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
-        // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_btnCerrarActionPerformed
+
+    private void btnRegistroVentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroVentasActionPerformed
+        new VentanaVentas().setVisible(true);
+    }//GEN-LAST:event_btnRegistroVentasActionPerformed
+
+    private void btnCatalogoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCatalogoActionPerformed
+        new VentanaCatalogo().setVisible(true);
+    }//GEN-LAST:event_btnCatalogoActionPerformed
 
     /**
      * @param args the command line arguments

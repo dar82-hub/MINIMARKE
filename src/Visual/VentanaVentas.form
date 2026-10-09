@@ -2,7 +2,7 @@
 
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
-    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -204,6 +204,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Ver ventas del d&#xed;a"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnVerVentasDiaActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnConfirmarVenta">
       <Properties>

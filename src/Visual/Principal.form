@@ -71,6 +71,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Registro de Ventas"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegistroVentasActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnCatalogo">
       <Properties>
@@ -79,6 +82,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Cat&#xe1;logo"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCatalogoActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnCerrar">
       <Properties>

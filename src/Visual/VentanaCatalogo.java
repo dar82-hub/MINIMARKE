@@ -32,7 +32,7 @@ public class VentanaCatalogo extends javax.swing.JFrame {
         scrollCatalogo = new javax.swing.JScrollPane();
         tablaCatalogo = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         lblTituloCatalogo.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         lblTituloCatalogo.setText("Catálogo de Productos");

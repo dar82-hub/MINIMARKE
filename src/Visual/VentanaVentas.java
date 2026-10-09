@@ -42,7 +42,7 @@ public class VentanaVentas extends javax.swing.JFrame {
         lblIgv = new javax.swing.JLabel();
         lblTotal = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         lblTitulo.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         lblTitulo.setText("Registro de Ventas y Cierre de Caja");
@@ -75,6 +75,11 @@ public class VentanaVentas extends javax.swing.JFrame {
 
         btnVerVentasDia.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnVerVentasDia.setText("Ver ventas del día");
+        btnVerVentasDia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerVentasDiaActionPerformed(evt);
+            }
+        });
 
         btnConfirmarVenta.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnConfirmarVenta.setText("Confirmar venta");
@@ -146,6 +151,10 @@ public class VentanaVentas extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnVerVentasDiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerVentasDiaActionPerformed
+        new VentanaResumenDia().setVisible(true);
+    }//GEN-LAST:event_btnVerVentasDiaActionPerformed
 
     /**
      * @param args the command line arguments
