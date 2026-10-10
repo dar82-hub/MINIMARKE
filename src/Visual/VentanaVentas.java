@@ -11,6 +11,8 @@ public class VentanaVentas extends javax.swing.JFrame {
     
     public VentanaVentas() {
         initComponents();
+         setLocationRelativeTo(null);
+        this.dispose();
     }
 
     @SuppressWarnings("unchecked")
@@ -191,6 +193,7 @@ public class VentanaVentas extends javax.swing.JFrame {
 
     private void btnVerVentasDiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerVentasDiaActionPerformed
         new VentanaResumenDia().setVisible(true);
+        setLocationRelativeTo(null);
     }//GEN-LAST:event_btnVerVentasDiaActionPerformed
 
     private void listSugerenciasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listSugerenciasMouseClicked

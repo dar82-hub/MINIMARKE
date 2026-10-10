@@ -15,6 +15,8 @@ public class VentanaCatalogo extends javax.swing.JFrame {
      */
     public VentanaCatalogo() {
         initComponents();
+         setLocationRelativeTo(null);
+        this.dispose();
     }
 
     /**

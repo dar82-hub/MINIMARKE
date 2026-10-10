@@ -3,7 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Visual;
-
+import Estructuras.Resumen_Ventas;
+import java.util.HashMap;
+import javax.swing.table.DefaultTableModel;
 /**
  *
  * @author USER
@@ -15,7 +17,30 @@ public class VentanaResumenDia extends javax.swing.JFrame {
      */
     public VentanaResumenDia() {
         initComponents();
+        setLocationRelativeTo(null);
+        this.dispose();
     }
+    public void mostrarResumen(Resumen_Ventas resumen) {
+
+    DefaultTableModel modelo =(DefaultTableModel) tablaResumen.getModel();
+            
+
+    // Borrar las filas anteriores
+    modelo.setRowCount(0);
+
+    // Obtener los productos y cantidades acumuladas
+    HashMap<String, Integer> productos =
+            resumen.getProductosVendidos();
+
+    // Recorrer el HashMap
+    for (String nombre : productos.keySet()) {
+
+        int cantidad = productos.get(nombre);
+
+        // Añadir una fila a la tabla
+        modelo.addRow(new Object[]{nombre, cantidad});
+    }
+}
 
     /**
      * This method is called from within the constructor to initialize the form.
