@@ -11,10 +11,16 @@ public class Carrito {
         items = new ArrayList<>();
     }
     
-    //agrega una fila al final de la lista
-    public void agregar(ItemVentaCarrito item) {
-        items.add(item);
+    //agrega productos al carrito
+    public void agregar(ItemVentaCarrito nuevo) {
+        for (ItemVentaCarrito item : items) {
+            if (item.getCodigoProducto().equals(nuevo.getCodigoProducto())) {
+                item.setCantidad(item.getCantidad() + nuevo.getCantidad());
+            return; 
+        }
     }
+    items.add(nuevo); 
+}
  
     // quita la fila en la posición indicada 
     public void eliminar(int indice) {
